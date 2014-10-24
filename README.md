@@ -9,7 +9,8 @@ define how to check for those changes (should we check ETag? sha/md5 hash of
 content? `Last-Modified`?).
 
 Eckchay watches a list of websites until one changes based on the criteria, at
-which point it gets dropped from the list.
+which point it gets dropped from the list, and a notification (probably email,
+but currently undecided) gets emitted.
 
 To start with, Eckchay will perform checks hourly, though in the future, it
 would be nice to have the delay on a per-site basis.
